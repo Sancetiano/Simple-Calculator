@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+    
+    max-height: 100vh;
+    width: 100%;
+    background-image: url(ocean_themed_gradient_blur_background_0509.jpg);
+}
+
+.heading{
+    /* display: flex;
+    
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+    padding: 20px;
+    background-color: hsl(0, 1%, 27%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    /* border: 1px solid #ccc; */
+    color: whitesmoke;
+    /* border-radius: 5px; */
+    font-size: 1.4em;
+    text-align: right;
+    background-color: hsl(0, 0%, 30%);
+}
+
+
+button {  
+    width: 50px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    background-color: hsl(0, 0%, 50%);
+    color: white;
+    cursor: pointer;
+}
+
+.keys {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;   
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 60%);
+    color: white;
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 50%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 40%);
+}
